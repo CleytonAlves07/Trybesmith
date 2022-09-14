@@ -4,4 +4,6 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/products');
+
 export default app;
