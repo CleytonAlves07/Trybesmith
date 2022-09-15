@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
-import UserService, { schema } from '../services/user.service';
+import UserService from '../services/user.service';
 import jwtService from '../services/jwt.service';
+import schema from '../helpers/schema.user';
 
 class UserController {
   constructor(private userService = new UserService()) { }
